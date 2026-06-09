@@ -26,24 +26,54 @@ function Blog() {
         <div className="py-[10rem] container gap-16 page-padding grid grid-cols-[64fr_35fr] md1000:grid-cols-1 md1000:gap-32">
           {/* blog */}
           <div className="flex flex-col gap-28">
-            <BlogBox img={Img1} title="Yoga For Everyone in 2022" />
+            <BlogBox
+              img={Img1}
+              title="Yoga For Everyone: A Beginner's Guide to Mindfulness"
+              date="March 22, 2026"
+              category="Yoga"
+              description="Discover how yoga can transform your physical strength and mental clarity. Learn the essential poses, breathing techniques, and alignment tips to start your practice safely and effectively today."
+            />
             <BlogBox
               img={Img2}
-              title="Getting Back Into CrossFit After Vacation"
+              title="Getting Back Into CrossFit After Vacation: 5 Tips to Restart Safely"
+              date="June 1, 2026"
+              category="CrossFit"
+              description="Taking a break is essential, but returning to high-intensity training requires strategy. Rebuild your work capacity, prioritize joint mobility, and ease back into your CrossFit routine without risking injury."
             />
-            <BlogBox img={Img3} title="Meet Fitness Ambassador Grace" />
-            <BlogBox img={Img4} title="The Best are European Materls Direct" />
+            <BlogBox
+              img={Img3}
+              title="Meet Fitness Ambassador Gauri: My Journey to Powerlifting"
+              date="May 28, 2026"
+              category="Body Building"
+              description="Read Gauri's inspiring story of transitioning from light cardio workouts to lifting heavy. She shares how she overcame gym intimidation and explains why lifting weights is empowering for women."
+            />
+            <BlogBox
+              img={Img4}
+              title="The Science of Meditation: How Mindfulness Enhances Athletic Recovery"
+              date="May 15, 2026"
+              category="Meditation"
+              description="Elite physical performance is as much mental as it is physical. Explore how meditation lowers cortisol levels, speeds up muscle repair, improves sleep quality, and keeps you focused under pressure."
+            />
             <BlogBox
               img={Img5}
-              title="Give your Fitness a Boost with our Gym"
+              title="Fueling Peak Performance: Pre- and Post-Workout Nutrition Guide"
+              date="April 10, 2026"
+              category="Fitness"
+              description="What you eat before and after a workout determines your success. Get our expert nutritionists' recommendations for optimal macro ratios to boost stamina and accelerate muscle synthesis."
             />
             <BlogBox
               img={Img6}
-              title="How to Get Fit Your Kids Moving Throughout The Summer"
+              title="Beat the Heat: High-Intensity Workouts to Keep You Fit All Summer"
+              date="April 25, 2026"
+              category="Fitness"
+              description="Keep your training momentum going with our summer-proof HIIT circuit routines. These short, high-intensity workouts are designed to maximize calorie burn and maintain lean muscle in hot weather."
             />
             <BlogBox
               img={Img7}
-              title="Give your fitness a boost with our new gym challenge"
+              title="The Weight Wearhouse 30-Day Strength Challenge: Are You Ready?"
+              date="June 8, 2026"
+              category="Body Building"
+              description="Push your limits with our upcoming community strength challenge. Access daily custom workouts, participate in group training sessions, and compete for incredible fitness rewards."
             />
           </div>
 
@@ -123,10 +153,10 @@ function Blog() {
                   <img src={Recent1} alt="recent_img" className="w-[10rem]" />
                   <div className="flex flex-col gap-4 justify-center">
                     <p className="text-[14px] text-[#646464] font-medium">
-                      March 22, 2022
+                      March 22, 2026
                     </p>
                     <p className="text-[16px] text-black hover:text-[#FFD700] ease-in duration-200 cursor-pointer font-bold">
-                      Yoga For Everyone in 2022
+                      Yoga For Everyone: A Beginner's Guide
                     </p>
                   </div>
                 </div>
@@ -135,7 +165,7 @@ function Blog() {
                   <img src={Recent2} alt="recent_img" className="w-[10rem]" />
                   <div className="flex flex-col gap-4 justify-center">
                     <p className="text-[14px] text-[#646464] font-medium">
-                      March 22, 2022
+                      June 1, 2026
                     </p>
                     <p className="text-[16px] text-black hover:text-[#FFD700] ease-in duration-200 cursor-pointer font-bold">
                       Getting Back Into CrossFit
@@ -147,10 +177,10 @@ function Blog() {
                   <img src={Recent3} alt="recent_img" className="w-[10rem]" />
                   <div className="flex flex-col gap-4 justify-center">
                     <p className="text-[14px] text-[#646464] font-medium">
-                      March 22, 2022
+                      May 28, 2026
                     </p>
                     <p className="text-[16px] text-black hover:text-[#FFD700] ease-in duration-200 cursor-pointer font-bold">
-                      Meet Fitness Abassador Grace
+                      Meet Fitness Ambassador Gauri
                     </p>
                   </div>
                 </div>
@@ -159,10 +189,10 @@ function Blog() {
                   <img src={Recent4} alt="recent_img" className="w-[10rem]" />
                   <div className="flex flex-col gap-4 justify-center">
                     <p className="text-[14px] text-[#646464] font-medium">
-                      March 22, 2022
+                      May 15, 2026
                     </p>
                     <p className="text-[16px] text-black hover:text-[#FFD700] ease-in duration-200 cursor-pointer font-bold">
-                      The best are European Meditation Practitioner
+                      The Science of Meditation
                     </p>
                   </div>
                 </div>
@@ -172,10 +202,10 @@ function Blog() {
                   <img src={Recent6} alt="recent_img" className="w-[10rem]" />
                   <div className="flex flex-col gap-4 justify-center">
                     <p className="text-[14px] text-[#646464] font-medium">
-                      March 22, 2022
+                      April 25, 2026
                     </p>
                     <p className="text-[16px] text-black hover:text-[#FFD700] ease-in duration-200 cursor-pointer font-bold">
-                      How To Get Lean For The Summer
+                      Beat the Heat: Summer Workouts
                     </p>
                   </div>
                 </div>

@@ -28,21 +28,21 @@ function Blog() {
           <div className="flex gap-6 w-full mt-[5rem] md1200:justify-center flex-wrap">
             <BlogBox
               bgClass="box1Bg"
-              date="22.03.2022"
-              title="Yoga For Everyone in 2023"
-              description="This is program designed to make the practice of yoga beneficial for people of all ages, abilities, and backgrounds. "
+              date="22.03.2026"
+              title="Yoga For Everyone: A Beginner's Guide"
+              description="Discover how yoga can transform your physical strength and mental clarity. Learn the essential poses, breathing techniques, and alignment tips to start your practice safely."
             />
             <BlogBox
               bgClass="box2Bg"
-              date="13.09.2022"
+              date="01.06.2026"
               title="Getting Back Into CrossFit After Vacation"
-              description="Learn how to ease back into your CrossFit routine after a vacation with tips and strategies for success."
+              description="Taking a break is essential, but returning to high-intensity training requires strategy. Rebuild your work capacity and ease back into your CrossFit routine safely."
             />
             <BlogBox
               bgClass="box3Bg"
-              date="28.06.2022"
-              title="Meet Fitness Ambassador Grace"
-              description="Get to know Grace, a fitness enthusiast and dedicated ambassador who is passionate about helping others reach their fitness goals."
+              date="28.05.2026"
+              title="Meet Fitness Ambassador Gauri"
+              description="Read Gauri's inspiring story of transitioning from light cardio workouts to lifting heavy, and why lifting weights is empowering for women."
             />
           </div>
         </div>

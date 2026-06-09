@@ -40,19 +40,19 @@ function InstagramGallery({ items }) {
   const getMockComments = (id) => {
     const commentsList = [
       [
-        { user: "alex_fitness", text: "Insane strength! Need to try this routine. 🔥", time: "2h" },
-        { user: "coach_dan", text: "Form is perfect here. Keep crushing it! 🙌", time: "4h" },
-        { user: "sarah.lifts", text: "This gym looks amazing. Setting goals! 💪", time: "6h" }
+        { user: "amit_fitness", text: "Insane strength! Need to try this routine. 🔥", time: "2h" },
+        { user: "coach_deepak", text: "Form is perfect here. Keep crushing it! 🙌", time: "4h" },
+        { user: "sneha.lifts", text: "This gym looks amazing. Setting goals! 💪", time: "6h" }
       ],
       [
-        { user: "beast_mode", text: "Pure motivation right here! 💯", time: "1h" },
-        { user: "fitness_journey", text: "Which protein do you guys recommend?", time: "3h" },
-        { user: "gym_rat_99", text: "Weight Wearhouse gym is elite! 🏋️‍♂️", time: "5h" }
+        { user: "singh_beast", text: "Pure motivation right here! 💯", time: "1h" },
+        { user: "rahul_fitness", text: "Which protein do you guys recommend?", time: "3h" },
+        { user: "rohit_lifting", text: "Weight Wearhouse gym is elite! 🏋️‍♂️", time: "5h" }
       ],
       [
-        { user: "iron_addict", text: "Consistency always wins. Let's go!", time: "45m" },
-        { user: "yoga_lover", text: "Mind-muscle connection is real. 🙏", time: "2h" },
-        { user: "kyle_fit", text: "That workout circuit is brutal but so good! 💦", time: "8h" }
+        { user: "iron_arjun", text: "Consistency always wins. Let's go!", time: "45m" },
+        { user: "priya_yoga", text: "Mind-muscle connection is real. 🙏", time: "2h" },
+        { user: "karan_fit", text: "That workout circuit is brutal but so good! 💦", time: "8h" }
       ]
     ];
     return commentsList[id % commentsList.length];

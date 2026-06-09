@@ -62,7 +62,143 @@ function Saturday() {
       <div className="mt-[5rem]">
         {/* monday */}
         <div className="flex flex-col gap-3">
-          {/* row */}
+          {/* row 1: Running */}
+          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+            {/* class name */}
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">
+                Class Name
+              </p>
+              <p className="text-[18px] text-black font-bold mt-3">Running</p>
+            </li>
+            {/* time */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                5:00am - 6:00am
+              </p>
+            </li>
+            {/* trainer */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                Shobit Rajput
+              </p>
+            </li>
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full items-center flex justify-end min800:justify-center">
+              <Link
+                onClick={() => window.top(0, 0)}
+                to="/contact"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 "
+              >
+                Join Now
+              </Link>
+            </li>
+          </ul>
+
+          {/* row 2: Meditation */}
+          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+            {/* class name */}
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">
+                Class Name
+              </p>
+              <p className="text-[18px] text-black font-bold mt-3">Meditation</p>
+            </li>
+            {/* time */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                6:00am - 7:00am
+              </p>
+            </li>
+            {/* trainer */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                Lata Thakur
+              </p>
+            </li>
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full items-center flex justify-end min800:justify-center">
+              <Link
+                onClick={() => window.top(0, 0)}
+                to="/contact"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 "
+              >
+                Join Now
+              </Link>
+            </li>
+          </ul>
+
+          {/* row 3: Workout */}
+          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+            {/* class name */}
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">
+                Class Name
+              </p>
+              <p className="text-[18px] text-black font-bold mt-3">Workout</p>
+            </li>
+            {/* time */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                7:00am - 8:00am
+              </p>
+            </li>
+            {/* trainer */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                Shobit Rajput
+              </p>
+            </li>
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full items-center flex justify-end min800:justify-center">
+              <Link
+                onClick={() => window.top(0, 0)}
+                to="/contact"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 "
+              >
+                Join Now
+              </Link>
+            </li>
+          </ul>
+
+          {/* row 4: Cardio */}
+          <ul className="flex justify-between w-full min800:flex-col min800:text-center">
+            {/* class name */}
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">
+                Class Name
+              </p>
+              <p className="text-[18px] text-black font-bold mt-3">Cardio</p>
+            </li>
+            {/* time */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                9:00am - 10:00am
+              </p>
+            </li>
+            {/* trainer */}
+            <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[18px] text-black font-bold mt-3">
+                Deepak Sen
+              </p>
+            </li>
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full items-center flex justify-end min800:justify-center">
+              <Link
+                onClick={() => window.top(0, 0)}
+                to="/contact"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 "
+              >
+                Join Now
+              </Link>
+            </li>
+          </ul>
+
+          {/* row 5: Power Lifting */}
           <ul className="flex justify-between w-full min800:flex-col min800:text-center">
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
@@ -84,17 +220,21 @@ function Saturday() {
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
               <p className="text-[18px] text-black font-bold mt-3">
-                David Laid
+                Robin Thakur
               </p>
             </li>
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
-              <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 ">
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full items-center flex justify-end min800:justify-center">
+              <Link
+                onClick={() => window.top(0, 0)}
+                to="/contact"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 "
+              >
                 Join Now
-              </button>
+              </Link>
             </li>
           </ul>
 
-          {/* row */}
+          {/* row 6: Yoga */}
           <ul className="flex justify-between w-full min800:flex-col min800:text-center">
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
@@ -114,13 +254,17 @@ function Saturday() {
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
               <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
               <p className="text-[18px] text-black font-bold mt-3">
-                Milica Tails
+                Priya Sharma
               </p>
             </li>
-            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
-              <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 ">
+            <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full items-center flex justify-end min800:justify-center">
+              <Link
+                onClick={() => window.top(0, 0)}
+                to="/contact"
+                className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#FFD700] ease-in duration-200 "
+              >
                 Join Now
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

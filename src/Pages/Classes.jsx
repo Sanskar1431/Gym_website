@@ -47,7 +47,7 @@ function Classes() {
           <ClassesBox
             bgImg="cardio-bg"
             title="Cardio"
-            trainer="David Rich"
+            trainer="Deepak Sen"
             date="Sat: 9:00 am"
           />
           <ClassesBox
@@ -65,7 +65,7 @@ function Classes() {
           <ClassesBox
             bgImg="crossfit-bg"
             title="Crossfit"
-            trainer="Jenifer Alex"
+            trainer="Pooja Patel"
             date="Wen: 9:00 pm"
           />
           <ClassesBox
@@ -98,7 +98,7 @@ function Classes() {
           <ClassesBox
             bgImg="cardio-bg"
             title="Cardio"
-            trainer="David Rich"
+            trainer="Deepak Sen"
             date="Sat: 9:00 am"
           />
           <ClassesBox
@@ -116,7 +116,7 @@ function Classes() {
           <ClassesBox
             bgImg="crossfit-bg"
             title="Crossfit"
-            trainer="Jenifer Alex"
+            trainer="Pooja Patel"
             date="Wen: 9:00 pm"
           />
           <ClassesBox
@@ -128,20 +128,20 @@ function Classes() {
           <ClassesBox
             bgImg="bodybuilding-bg"
             title="Body Building"
-            trainer="Jake Paul"
+            trainer="Sanjay Singh"
             date="Mon: 8:00 pm"
           />
 
           <ClassesBox
             bgImg="yoga-bg"
             title="Yoga"
-            trainer="Marta Mich"
+            trainer="Priya Sharma"
             date="Wen: 8:00 am"
           />
           <ClassesBox
             bgImg="fitness-bg"
             title="Fitness"
-            trainer="Mia Malkova"
+            trainer="Karan Kapoor"
             date="Sun: 5:00 pm"
           />
         </div>
