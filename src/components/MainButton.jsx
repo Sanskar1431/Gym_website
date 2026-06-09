@@ -1,3 +1,4 @@
+// Weight Wearhouse Gym Main CTA Button
 import { Link } from "react-router-dom";
 
 function MainButton({ color, bg, cN, arrowColor, hover, text, goTo }) {
