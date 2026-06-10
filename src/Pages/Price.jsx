@@ -1,4 +1,4 @@
-// Weight Wearhouse Gym Pricing Page
+// Weight Wearhouse Gym Pricing Page.
 import Footer from "../components/Footer/Footer";
 import Pricing from "../components/Pricing/Pricing";
 
