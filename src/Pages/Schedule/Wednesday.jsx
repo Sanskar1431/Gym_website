@@ -1,3 +1,4 @@
+// Weight Wearhouse Gym Wednesday Schedule
 import React from "react";
 import { Link } from "react-router-dom";
 
