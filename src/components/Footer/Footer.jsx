@@ -1,3 +1,4 @@
+// Weight Wearhouse Gym Footer Component
 import FooterLogo from "../../images/logo/Logo.jpg";
 
 function Footer() {
