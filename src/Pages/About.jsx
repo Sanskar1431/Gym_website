@@ -1,3 +1,4 @@
+// Weight Wearhouse Gym About Us Page
 import Footer from "../components/Footer/Footer";
 import GirlRunning from "../images/who-we-are/girl-run.png";
 import GirlRedBg from "../images/who-we-are/girl-redbg.svg";
