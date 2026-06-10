@@ -1,3 +1,4 @@
+// Weight Wearhouse Gym Navbar Component
 import { useState } from "react";
 import Logo from "../../images/logo/Logo.jpg";
 import NavList from "../Nav/NavList";
