@@ -1,4 +1,4 @@
-// Weight Wearhouse Gym Contact Us Page (v2.1).
+// Weight Wearhouse Gym Contact Us Page (v2.2).
 import Footer from "../components/Footer/Footer";
 
 function Login() {
