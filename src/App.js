@@ -1,4 +1,4 @@
-// Weight Wearhouse Gym App Entry Point Router (v2.2).
+// Weight Wearhouse Gym App Entry Point Router (v2.3).
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
