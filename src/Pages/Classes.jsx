@@ -1,4 +1,4 @@
-// Weight Wearhouse Gym Classes Page (v2.6)
+// Weight Wearhouse Gym Classes Page (v2.7)
 import { useState } from "react";
 import ClassesBox from "../components/ClassesBox/ClassesBox";
 import Footer from "../components/Footer/Footer";
