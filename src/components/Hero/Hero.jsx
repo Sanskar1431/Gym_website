@@ -12,17 +12,17 @@ function Hero() {
           {/* hero section */}
           <div
             className="flex flex-col text-white
-           absolute hero-text min800:items-center min800:-right-[22rem] min620:-right-[20rem] min800:w-[80%] min540:-right-[17rem] min450:-right-[14rem] min375:-right-[11rem]"
+           absolute hero-text min800:items-center min800:left-1/2 min800:-translate-x-1/2 min800:right-auto min800:w-[90%]"
           >
-            <p className="text-black text-[16px] uppercase font-medium relative z-10 pl-16 min800:pl-0 mb-8">
+            <p className="text-black text-[1.6rem] uppercase font-medium relative z-10 pl-16 min800:pl-0 mb-8">
               ignite your potential
             </p>
             <img
               src={TitleBg}
               alt="text_bg"
-              className=" w-[52%] absolute -top-3 title-white min800:w-[24rem] "
+              className=" w-[52%] absolute -top-3 title-white min800:w-[24rem] min800:left-1/2 min800:-translate-x-1/2"
             />
-            <h1 className="font-bold text-[48px] uppercase mb-[4rem] min450:text-[40px]">
+            <h1 className="font-bold text-[4.8rem] uppercase mb-[4rem] min450:text-[4.0rem]">
               forge your body <br />
               <span className="font-thin">relentless & strong</span>
             </h1>

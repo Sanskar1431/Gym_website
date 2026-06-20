@@ -34,31 +34,31 @@ function BmiCalc() {
             <h2 className="text-[4rem] font-bold leading-[1.1] mb-8">
               Let's Calculate Your <span className="text-[#FFD700]">BMI</span>
             </h2>
-            <p className="text-[16px] text-[#a1a1a1] min620:text-white">
+            <p className="text-[1.6rem] text-[#a1a1a1] min620:text-white">
               Easily track your body composition metrics to optimize your metabolic and athletic training splits.
             </p>
             <div className="flex flex-col">
-              <form className="flex w-full gap-6 h-[50px] mt-10 ">
+              <form className="flex w-full gap-6 h-[50px] min450:h-auto min450:flex-col mt-10">
                 <input
                   onChange={(e) => setWeight(e.target.value)}
-                  className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
+                  className="w-[50%] min450:w-full h-full min450:h-[50px] bg-transparent text-[1.4rem] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
                   type="text"
                   placeholder="Weight / kg"
                 ></input>
                 <input
                   onChange={(e) => setHeight(e.target.value)}
-                  className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
+                  className="w-[50%] min450:w-full h-full min450:h-[50px] bg-transparent text-[1.4rem] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
                   type="text"
                   placeholder="Height / cm"
                 ></input>
               </form>
               {/* output */}
-              <p className="mt-10 gap-3 text-[16px] font-medium flex items-center w-full ">
-                <span className="w-1/2">
+              <p className="mt-10 gap-3 text-[1.6rem] font-medium flex items-center w-full min450:flex-col min450:items-start min450:gap-2">
+                <span className="w-1/2 min450:w-full">
                   Your BMI is: &nbsp;
                   <span className="text-[#FFD700]">{bmi}</span>
                 </span>
-                <span className="w-1/2">
+                <span className="w-1/2 min450:w-full">
                   Your weight is: &nbsp;
                   <span className="text-[#FFD700]">{message}</span>
                 </span>
@@ -67,7 +67,7 @@ function BmiCalc() {
                 onClick={calcBmi}
                 style={{ transition: "all 0.3s" }}
                 type="submit"
-                className="text-[15px] uppercase font-bold mt-10 bg-[#323232] w-[15rem] h-[5rem] hover:bg-[#FFD700]"
+                className="text-[1.5rem] uppercase font-bold mt-10 bg-[#323232] w-[15rem] h-[5rem] hover:bg-[#FFD700]"
               >
                 Calculate
               </button>

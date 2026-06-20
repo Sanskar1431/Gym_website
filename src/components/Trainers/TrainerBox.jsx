@@ -25,7 +25,7 @@ function TrainerBox() {
   return (
     <>
       <div
-        className="flex justify-center gap-[5rem] md1200:flex-wrap"
+        className="flex justify-center gap-[5rem] md1200:flex-wrap md1000:flex-nowrap"
         style={{ margin: "0 auto" }}
       >
         {trainers.map((train, id) => (
@@ -33,7 +33,7 @@ function TrainerBox() {
             onMouseEnter={hoverBox}
             onMouseLeave={hoverBoxRemove}
             key={id}
-            className="relative cursor-pointer w-[35rem] min450:w-full flex flex-col select-none"
+            className="relative cursor-pointer w-[35rem] md1000:w-[28rem] md1000:flex-shrink-0 md1000:snap-center flex flex-col select-none"
           >
             {/* trainer img */}
             <img
@@ -56,9 +56,9 @@ function TrainerBox() {
               <img
                 alt="shape"
                 src={Shape}
-                className="absolute -top-[25px] left-[113px]"
+                className="absolute -top-[25px] left-1/2 -translate-x-1/2"
               />
-              <i className="fa-solid fa-angle-up absolute -top-[16px] left-[162px] text-3xl"></i>
+              <i className="fa-solid fa-angle-up absolute -top-[16px] left-1/2 -translate-x-1/2 text-3xl"></i>
               <h3 className="font-bold text-[2.4rem] ">{train.name}</h3>
               <p className="font-medium text-[1.5rem] text-[#646464]">
                 {train.job}

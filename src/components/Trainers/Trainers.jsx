@@ -1,7 +1,28 @@
+import { useRef, useEffect } from "react";
 import TitleRed from "../../images/who-we-are/title-bg.svg";
 import TrainerBox from "./TrainerBox";
 
 function Trainers() {
+  const scrollContainerRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const handleAutoScroll = () => {
+      if (window.innerWidth > 1000) return;
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+      if (container.scrollLeft >= maxScrollLeft - 10) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: 300, behavior: "smooth" });
+      }
+    };
+
+    const intervalId = setInterval(handleAutoScroll, 3000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <section id="team" className="trainers-section">
@@ -27,7 +48,10 @@ function Trainers() {
           </div>
 
           {/* trainers div -- */}
-          <div className="flex mt-20 ">
+          <div
+            ref={scrollContainerRef}
+            className="flex mt-20 md1000:overflow-x-auto md1000:pb-6 md1000:px-4 md1000:snap-x md1000:snap-mandatory no-scrollbar"
+          >
             <TrainerBox />
           </div>
         </div>

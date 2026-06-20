@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import AboutCarts from "./AboutCarts";
 import TitleRed from "../../images/who-we-are/title-bg.svg";
 import TrainersIcon from "../../images/who-we-are/weightlifter.png";
@@ -10,12 +11,35 @@ import GirlWind from "../../images/who-we-are/wind.png";
 import MainButton from "../MainButton";
 
 function About() {
+  const scrollContainerRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const handleAutoScroll = () => {
+      if (window.innerWidth > 1000) return;
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+      if (container.scrollLeft >= maxScrollLeft - 10) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: 300, behavior: "smooth" });
+      }
+    };
+
+    const intervalId = setInterval(handleAutoScroll, 3000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <section className="flex flex-col justify-between gap-2 about-section pb-[20rem]">
         <div className="container page-padding">
           {/* about cards */}
-          <div className="about-cards flex gap-10 -mt-[8.5rem] md1000:flex-col">
+          <div
+            ref={scrollContainerRef}
+            className="about-cards flex gap-10 -mt-[8.5rem] md1000:flex-row md1000:overflow-x-auto md1000:pb-6 md1000:snap-x md1000:snap-mandatory no-scrollbar"
+          >
             <AboutCarts />
           </div>
 
@@ -26,7 +50,7 @@ function About() {
           >
             {/* about text */}
             <div className="mt-[10.5rem] relative md1000:items-center md1000:flex md1000:flex-col md1000:text-center md1000:w-[full]">
-              <p className="text-white font-semibold text-[15px] relative uppercase z-10 pl-16 md1000:pl-0 mb-12">
+              <p className="text-white font-semibold text-[1.5rem] relative uppercase z-10 pl-16 md1000:pl-0 mb-12">
                 who we are
               </p>
               <img
@@ -34,10 +58,10 @@ function About() {
                 alt="text_bg"
                 className="w-[31%] absolute -top-[6px] md1000:w-[22rem]"
               />
-              <h2 className="text-[35px] font-bold leading-tight mb-6 w-[60rem] min800:w-[100%]">
+              <h2 className="text-[3.5rem] font-bold leading-tight mb-6 max-w-[60rem] w-full">
                 Forge Your Physique. Unleash Your Ultimate Strength.
               </h2>
-              <p className="text-[16px] text-[#646464] font-medium ">
+              <p className="text-[1.6rem] text-[#646464] font-medium ">
                 Unlock your body's true potential with our elite strength and
                 conditioning programs, engineered to optimize athletic performance
                 and functional power.
@@ -50,7 +74,7 @@ function About() {
                     alt="icon_img"
                     className={`w-[5.4rem] mb-6 h-auto`}
                   />
-                  <h3 className="uppercase font-bold text-[20px] leading-snug">
+                  <h3 className="uppercase font-bold text-[2rem] leading-snug">
                     professional <br /> trainers
                   </h3>
                 </div>
@@ -61,7 +85,7 @@ function About() {
                     alt="icon_img"
                     className={`w-[5.4rem] mb-6 h-auto`}
                   />
-                  <h3 className="uppercase font-bold text-[20px] leading-snug">
+                  <h3 className="uppercase font-bold text-[2rem] leading-snug">
                     modern <br /> equipments
                   </h3>
                 </div>
@@ -72,7 +96,7 @@ function About() {
                     alt="icon_img"
                     className={`w-[5.4rem] mb-6 h-auto`}
                   />
-                  <h3 className="uppercase font-bold text-[20px] leading-snug">
+                  <h3 className="uppercase font-bold text-[2rem] leading-snug">
                     premium <br />
                     lifting gear
                   </h3>
