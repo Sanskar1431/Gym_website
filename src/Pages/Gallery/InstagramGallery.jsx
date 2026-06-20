@@ -60,8 +60,33 @@ function InstagramGallery({ items }) {
 
   return (
     <div className="w-full">
+      {/* Instagram Profile Header / CTA Link at top of gallery */}
+      <div className="flex justify-between items-center mb-12 bg-gray-50 p-6 rounded-2xl border border-gray-200 min620:flex-col min620:gap-6 min620:text-center">
+        <div className="flex items-center gap-4 min620:flex-col">
+          <img src={Logo} alt="Weight Warehouse" className="w-20 h-20 rounded-full border object-cover" />
+          <div>
+            <h2 className="text-[2.2rem] font-bold text-black flex items-center gap-1 min620:justify-center">
+              weightwarehouse
+              <svg aria-label="Verified" className="w-[1.6rem] h-[1.6rem] text-[#0095f6] fill-current" viewBox="0 0 24 24">
+                <polygon fillRule="evenodd" points="12 2 14.887 5.097 18.529 4.316 19.31 7.957 22.903 8.845 21.848 12.38 23.848 15.38 20.848 17.38 19.848 20.915 16.255 21.803 15.474 25.444 11.832 24.664 8.945 27.761 6.058 24.664 2.416 25.444 1.635 21.803 -1.957 20.915 -0.957 17.38 -3.957 15.38 -1.957 12.38 -3.012 8.845 0.58 7.957 1.362 4.316 5.004 5.097" />
+                <polygon fill="#fff" points="9.75 16.25 5.5 12 6.75 10.75 9.75 13.75 17.25 6.25 18.5 7.5" />
+              </svg>
+            </h2>
+            <p className="text-[1.4rem] text-[#646464] font-medium">Follow us on Instagram for daily fitness updates and motivation!</p>
+          </div>
+        </div>
+        <a
+          href="https://www.instagram.com/weightwarehouse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#0095f6] hover:bg-[#1877f2] text-white font-bold text-[1.4rem] px-8 py-3 rounded-lg transition-colors duration-200 flex items-center gap-2"
+        >
+          <i className="fa-brands fa-instagram text-[1.8rem]"></i> Visit Profile
+        </a>
+      </div>
+
       {/* Gallery Grid */}
-      <div className="grid grid-cols-3 gap-6 md:gap-8 md1000:grid-cols-2 min540:grid-cols-1">
+      <div className="grid grid-cols-3 gap-4">
         {items.map((item) => (
           <div
             key={item.id}
@@ -131,7 +156,7 @@ function InstagramGallery({ items }) {
       {selectedItem && (
         <div
           onClick={() => setSelectedItem(null)}
-          className="fixed inset-0 bg-black/90 backdrop-blur-md z-[9999999] flex items-center justify-center p-4 md:p-8 animate-[fadeIn_0.2s_ease-out]"
+          className="fixed inset-0 bg-black/90 backdrop-blur-md z-[9999999] flex items-center justify-center p-8 min800:p-4 animate-[fadeIn_0.2s_ease-out]"
         >
           {/* Close button */}
           <button
@@ -144,7 +169,7 @@ function InstagramGallery({ items }) {
           {/* Left Navigation Arrow */}
           <button
             onClick={handlePrev}
-            className="absolute left-6 text-white text-[4rem] hover:text-[#FFD700] transition-colors duration-200 bg-black/30 w-[60px] h-[60px] rounded-full flex items-center justify-center z-[99999999] hover:bg-black/60 hidden md:flex"
+            className="absolute left-6 text-white text-[4rem] hover:text-[#FFD700] transition-colors duration-200 bg-black/30 w-[60px] h-[60px] rounded-full flex items-center justify-center z-[99999999] hover:bg-black/60 flex min800:hidden"
           >
             <i className="fa-solid fa-chevron-left -ml-1"></i>
           </button>
@@ -152,7 +177,7 @@ function InstagramGallery({ items }) {
           {/* Right Navigation Arrow */}
           <button
             onClick={handleNext}
-            className="absolute right-6 text-white text-[4rem] hover:text-[#FFD700] transition-colors duration-200 bg-black/30 w-[60px] h-[60px] rounded-full flex items-center justify-center z-[99999999] hover:bg-black/60 hidden md:flex"
+            className="absolute right-6 text-white text-[4rem] hover:text-[#FFD700] transition-colors duration-200 bg-black/30 w-[60px] h-[60px] rounded-full flex items-center justify-center z-[99999999] hover:bg-black/60 flex min800:hidden"
           >
             <i className="fa-solid fa-chevron-right -mr-1"></i>
           </button>
@@ -160,15 +185,15 @@ function InstagramGallery({ items }) {
           {/* Modal Container */}
           <div
             onClick={(e) => e.stopPropagation()}
-            className="flex flex-col md:flex-row max-w-[1050px] w-full max-h-[85vh] md:h-[600px] bg-white rounded-2xl overflow-hidden shadow-2xl animate-[scaleUp_0.25s_ease-out]"
+            className="flex flex-row md1000:flex-col max-w-[1050px] w-full max-h-[85vh] h-[600px] md1000:h-auto md1000:max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl animate-[scaleUp_0.25s_ease-out]"
           >
             {/* Left Column: Media display */}
-            <div className="flex-[3] bg-black flex items-center justify-center relative min-h-[300px] md:min-h-0 md:h-full">
+            <div className="flex-[3] bg-black flex items-center justify-center relative h-full md1000:h-auto md1000:min-h-[300px]">
               {selectedItem.type === "image" ? (
                 <img
                   src={selectedItem.src}
                   alt="selected_img"
-                  className="w-full h-full object-contain max-h-[40vh] md:max-h-full"
+                  className="w-full h-full object-contain max-h-full md1000:max-h-[40vh]"
                 />
               ) : (
                 <video
@@ -176,16 +201,21 @@ function InstagramGallery({ items }) {
                   controls
                   autoPlay
                   playsInline
-                  className="w-full h-full object-contain max-h-[40vh] md:max-h-full"
+                  className="w-full h-full object-contain max-h-full md1000:max-h-[40vh]"
                 />
               )}
             </div>
 
             {/* Right Column: Instagram-style sidebar details */}
-            <div className="flex-[2] flex flex-col h-[400px] md:h-full bg-white border-l border-gray-200">
+            <div className="flex-[2] flex flex-col h-full md1000:h-[400px] bg-white border-l border-gray-200 md1000:border-l-0 md1000:border-t">
               {/* Header profile info */}
               <div className="flex items-center justify-between p-5 border-b border-gray-100">
-                <div className="flex items-center gap-4">
+                <a
+                  href="https://www.instagram.com/weightwarehouse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 hover:opacity-85 transition-opacity"
+                >
                   <img
                     src={Logo}
                     alt="profile"
@@ -194,7 +224,7 @@ function InstagramGallery({ items }) {
                   <div>
                     <div className="flex items-center gap-1">
                       <p className="text-[1.5rem] font-bold text-black leading-tight">
-                        weightwearhousegym
+                        weightwarehouse
                       </p>
                       {/* Instagram verification badge */}
                       <svg
@@ -210,10 +240,15 @@ function InstagramGallery({ items }) {
                       Weight Wearhouse Gym
                     </p>
                   </div>
-                </div>
-                <button className="text-[1.4rem] font-bold text-[#0095f6] hover:text-[#00376b] transition-colors duration-200">
+                </a>
+                <a
+                  href="https://www.instagram.com/weightwarehouse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[1.4rem] font-bold text-[#0095f6] hover:text-[#00376b] transition-colors duration-200"
+                >
                   Follow
-                </button>
+                </a>
               </div>
 
               {/* Scrollable feed comments & caption */}
@@ -226,9 +261,14 @@ function InstagramGallery({ items }) {
                     className="w-12 h-12 rounded-full border border-gray-100 object-cover mt-1 flex-shrink-0"
                   />
                   <div>
-                    <span className="text-[1.4rem] font-bold text-black mr-2">
-                      weightwearhousegym
-                    </span>
+                    <a
+                      href="https://www.instagram.com/weightwarehouse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[1.4rem] font-bold text-black mr-2 hover:text-[#0095f6]"
+                    >
+                      weightwarehouse
+                    </a>
                     <span className="text-[1.4rem] text-black font-medium leading-relaxed">
                       {selectedItem.caption}
                     </span>
