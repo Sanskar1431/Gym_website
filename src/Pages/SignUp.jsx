@@ -38,7 +38,7 @@ function Signup() {
         <div className="py-[10rem] flex justify-center page-padding">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col py-40 px-20 bg-black w-[55rem] min450:w-full  shadow-xl"
+            className="flex flex-col py-40 px-20 bg-black max-w-[55rem] w-full shadow-xl"
           >
             <label className="text-[2rem] text-white mb-3 font-medium ">
               Email

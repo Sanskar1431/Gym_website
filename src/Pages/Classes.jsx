@@ -28,7 +28,7 @@ function Classes() {
 
         {/* boxes 1*/}
         <div
-          className={`container gap-12 page-padding py-[10rem] md1000:grid-cols-2 min620:grid-cols-1  grid-cols-3 grid-rows-3 text-left ${
+          className={`container gap-12 page-padding py-[10rem] md1000:grid-cols-2 min375:grid-cols-1  grid-cols-3 text-left ${
             load ? "grid" : "hidden"
           }`}
         >
@@ -79,7 +79,7 @@ function Classes() {
 
         {/* boxes 2*/}
         <div
-          className={`container gap-12 page-padding py-[10rem] grid-cols-3 md1000:grid-cols-2 min620:grid-cols-1  grid-rows-3 text-left  ${
+          className={`container gap-12 page-padding py-[10rem] grid-cols-3 md1000:grid-cols-2 min375:grid-cols-1  text-left  ${
             load ? "hidden" : "grid"
           }`}
         >

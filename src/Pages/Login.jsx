@@ -41,7 +41,7 @@ function Login() {
         <div className="page-padding py-[10rem] flex justify-center">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col py-40 px-20 bg-black w-[55rem] min450:w-full  shadow-xl"
+            className="flex flex-col py-40 px-20 bg-black max-w-[55rem] w-full shadow-xl"
           >
             {error ? (
               <p className="text-white bg-[#FFD700] font-bold text-[1.6rem] px-10 py-5 text-center mb-10">

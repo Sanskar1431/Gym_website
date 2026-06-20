@@ -21,10 +21,10 @@ function About() {
           </h1>
         </div>
         <div className="container page-padding py-[5rem]">
-          <div className="grid grid-cols-[1fr_1fr] h-[60rem] md1000:grid-cols-1">
+          <div className="grid grid-cols-[1fr_1fr] h-[60rem] md1000:grid-cols-1 md1000:h-auto">
             {/* title div -- */}
-            <div className="flex flex-col !text-left relative items-right justify-center md1000:items-center md1000:!text-center">
-              <p className="text-white relative z-10 text-[15px] uppercase font-bold mb-8 ml-20 md1000:ml-3 ">
+            <div className="flex flex-col !text-left relative items-right justify-center md1000:items-center md1000:!text-center md1000:py-12">
+              <p className="text-white relative z-10 text-[1.5rem] uppercase font-bold mb-8 ml-20 md1000:ml-3 ">
                 who we are
               </p>
               <img
@@ -36,7 +36,7 @@ function About() {
               <h2 className="text-[3.6rem] max-w-[53rem] font-bold mb-4">
                 We Will Give You Strength and Health
               </h2>
-              <p className="text-[#646464] font-medium text-[15px] max-w-[50rem] ">
+              <p className="text-[#646464] font-medium text-[1.5rem] max-w-[50rem] ">
                 At Weight Wearhouse gym, we are dedicated to helping you achieve the body of
                 your dreams. Our expert trainers and nutritionists will work
                 with you to create a personalized fitness and nutrition plan
@@ -65,11 +65,11 @@ function About() {
           </div>
           {/*  */}
           <div className="mt-[10rem]">
-            <div className="grid grid-cols-2 grid-rows-2 w-full min620:grid-cols-1">
-              <div className="w-full bg-white h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]">
+            <div className="grid grid-cols-2 w-full">
+              <div className="w-full bg-white h-[43rem] min620:h-auto min620:py-16 flex flex-col justify-center items-center text-center px-[10rem] min800:px-[1rem]">
                 <img src={Target} alt="target_img" className="w-[9rem]" />
-                <h2 className="text-[36px] font-bold mt-3">Our History</h2>
-                <p className="text-[16px] font-medium text-[#646464] mt-5">
+                <h2 className="text-[3.6rem] font-bold mt-3">Our History</h2>
+                <p className="text-[1.6rem] font-medium text-[#646464] mt-5">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit
                   Exercitation veniam consequat.
@@ -92,10 +92,10 @@ function About() {
                 />
               </div>
               {/*  */}
-              <div className="w-full bg-white h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]">
+              <div className="w-full bg-white h-[43rem] min620:h-auto min620:py-16 flex flex-col justify-center items-center text-center px-[10rem] min800:px-[1rem]">
                 <img src={Mountain} alt="target_img" className="w-[9rem]" />
-                <h2 className="text-[36px] font-bold mt-3">Our History</h2>
-                <p className="text-[16px] font-medium text-[#646464] mt-5">
+                <h2 className="text-[3.6rem] font-bold mt-3">Our History</h2>
+                <p className="text-[1.6rem] font-medium text-[#646464] mt-5">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit
                   Exercitation veniam consequat.

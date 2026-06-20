@@ -244,10 +244,10 @@ function Blog() {
             </div>
             {/* banner */}
             <div className="blog-banner w-full h-[56rem] relative">
-              <p className="absolute text-[34px] font-bold uppercase top-16 left-10 z-[2]">
+              <p className="absolute text-[34px] min450:text-[24px] font-bold uppercase top-16 left-10 z-[2]">
                 Weight Wearhouse gym
               </p>
-              <span className="banner-shape top-14 left-0 z-[1] bg-white absolute w-[36rem] h-[60px]"></span>
+              <span className="banner-shape top-14 left-0 z-[1] bg-white absolute w-[36rem] max-w-[90%] h-[60px]"></span>
               <div className="text-white flex flex-col absolute top-[10rem] left-10">
                 <p className="text-[64px] font-bold">34%</p>
                 <p className="text-[20px] font-bold -mt-[10px]">
