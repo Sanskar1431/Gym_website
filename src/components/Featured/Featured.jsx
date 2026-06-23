@@ -1,5 +1,6 @@
 import TitleRed from "../../images/who-we-are/title-bg.svg";
 import MainButton from "../MainButton";
+// Version 3.1 - Featured class cards with dynamic layout.
 
 function Featured() {
 
