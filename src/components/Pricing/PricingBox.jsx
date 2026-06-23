@@ -1,4 +1,5 @@
 import MainButton from "../MainButton";
+// Version 3.1 - Pricing card with responsive layout and alignment.
 
 function PricingBox({ img, price, title, currency = "₹", features }) {
   return (
