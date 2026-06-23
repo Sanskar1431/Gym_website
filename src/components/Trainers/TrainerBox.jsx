@@ -4,6 +4,7 @@ import Trainer3 from "../../images/trainers/trainer3.png";
 import TrainerBg from "../../images/trainers/trainer-bg.png";
 import Shape from "../../images/trainers/shape.png";
 import { useState } from "react";
+// Version 3.1 - Trainer details card layout and hover behaviors.
 
 function TrainerBox() {
   const [imgHover, setImgHover] = useState(false);
