@@ -1,4 +1,5 @@
 import { useState } from "react";
+// Version 3.1 - BMI calculation with responsive styling and units.
 
 function BmiCalc() {
   const [weight, setWeight] = useState(0);
