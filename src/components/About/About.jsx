@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+// Version 3.2 - About page layout updates
 import AboutCarts from "./AboutCarts";
 import TitleRed from "../../images/who-we-are/title-bg.svg";
 import TrainersIcon from "../../images/who-we-are/weightlifter.png";
