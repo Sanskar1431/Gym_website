@@ -1,4 +1,5 @@
 import { cardList } from "./CardList";
+// Version 3.2 - About carts responsive styling
 
 function AboutCarts() {
   return (
