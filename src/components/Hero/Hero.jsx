@@ -1,5 +1,6 @@
 import TitleBg from "../../images/pricing/titlebg.svg";
 import MainButton from "../MainButton";
+// Version 3.2 - Hero with centered layouts and dynamic scaling
 
 function Hero() {
   return (
