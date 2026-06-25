@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+// Version 3.2 - Blog recent news and auto scroll layout
 import TitleRed from "../../images/who-we-are/title-bg.svg";
 import BlogBox from "./BlogBox";
 
