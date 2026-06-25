@@ -1,4 +1,5 @@
 // Weight Wearhouse Gym Footer Component
+// Version 3.2 - Footer with responsive rem units
 import FooterLogo from "../../images/logo/Logo.jpg";
 
 function Footer() {
