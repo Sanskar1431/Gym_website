@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// Version 3.2 - Blog box card formatting
 
 function BlogBox({ date, title, description }) {
   const goTop = () => {
